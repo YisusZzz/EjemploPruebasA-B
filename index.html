@@ -2,12 +2,11 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-R" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prueba A/B (Versión A: Manual)</title>
+    <title>Prueba A/B (Versión B: Auto)</title>
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FXXHM3Z29R"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -16,32 +15,31 @@
 
         gtag('config', 'G-FXXHM3Z29R');
     </script>
-
 </head>
 
-<body></body>
-<h1>Prueba A/B: ¿Qué carrusel te gusta más?</h1>
-<h2 id="version-title">Versión A: Control Manual</h2>
+<body>
+    <h1>Prueba A/B: ¿Qué carrusel te gusta más?</h1>
+    <h2 id="version-title">Versión B: Carrusel Automático</h2>
 
-<div class="carousel-container">
-    <div class="carousel-slide active">
-        <img src="imagen1.png" alt="Imagen 1" />
+    <div class="carousel-container">
+        <div class="carousel-slide active">
+            <img src="imagen1.png" alt="Imagen 1" />
+        </div>
+        <div class="carousel-slide">
+            <img src="imagen2.png" alt="Imagen 2" />
+        </div>
+        <div class="carousel-slide">
+            <img src="imagen3.png" alt="Imagen 3" />
+        </div>
+        <a class="prev" id="prevBtn">&#10094;</a>
+        <a class="next" id="nextBtn">&#10095;</a>
     </div>
-    <div class="carousel-slide">
-        <img src="imagen2.png" alt="Imagen 2" />
-    </div>
-    <div class="carousel-slide">
-        <img src="imagen3.png" alt="Imagen 3" />
-    </div>
-    <a class="prev" id="prevBtn">&#10094;</a>
-    <a class="next" id="nextBtn">&#10095;</a>
-</div>
 
-<div class="feedback-box">
-    <button id="likeButton">¡Da clic si te gustó esta página!</button>
-</div>
+    <div class="feedback-box">
+        <button id="likeButton">¡Da clic si te gustó esta página!</button>
+    </div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
